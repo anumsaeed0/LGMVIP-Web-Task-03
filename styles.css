@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+  
+.header {
+    background-color: #004080;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1080px;
+    background-color: #0040803f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+  
+.registration-box, .display-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+
+}
+
+.registration-box h2, .display-box h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.registration-box p{
+    font-weight: bold;
+    font-style: italic;
+    color: #376fa7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    margin-bottom: 8px;
+    font-size: larger;
+
+}
+  
+input[type="text"], input[type="email"], input[type="tel"], input[type="url"], select, textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: medium;
+
+}
+  
+input[type="submit"], input[type="reset"] {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 49%;
+    font-size: larger;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+}
+
+input[type="reset"]{
+    background-color: #F96167;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: #376fa7;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a:hover {
+    color: #0056b3; 
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    font-family: Arial, sans-serif;
+}
+
+.display-box {
+    margin-left: 20px;
+}
+
+#displayData img{
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    border-radius: 50%;
+}
+
+.display-box p {
+    margin: 5px 0;
+}
+  
+#displayData {
+    position: relative;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+@media (max-width: 770px) {
+    .container {
+        flex-direction: column;
+    }
+  
+    .registration-box, .display-box {
+        display: flexbox; 
+    }
+    .display-box {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+  
+  
+  
+    
